@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: comic sans MS;
+        }
+        body{
+            background-color: rgb(7, 0, 19);
+            margin: 10px;
+            text-align: center;
+        }
+        .el1{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: pink;
+            color: rgb(7, 0, 19);
+            width: 45%;
+            height: 250px;
+            text-align: center;
+        }
+        .el2{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(255, 246, 192);
+            color: rgb(7, 0, 19);
+            width: 45%;
+            height: 250px;
+            text-align: center;
+        }
+        .el3{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(192, 255, 197);
+            color: rgb(7, 0, 19);
+            width: 45%;
+            height: 250px;
+            text-align: center;
+        }
+        .el4{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(196, 192, 255);
+            color: rgb(7, 0, 19);
+            width: 45%;
+            height: 250px;
+            text-align: center;
+        }
+        .el5{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(237, 192, 255);
+            color: rgb(7, 0, 19);
+            width: 45%;
+            height: 250px;
+            text-align: center;
+        }
+        .el6{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(251, 255, 192);
+            color: rgb(7, 0, 19);
+            width: 45%;
+            height: 250px;
+            text-align: center;
+        }
+        .el7{
+            display: inline-block;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(237, 192, 255);
+            color: rgb(7, 0, 19);
+            width: 42.5%;
+            height: 150px;
+            text-align: center;
+        }
+        .el8{
+            display: inline-block;
+            margin: 20px;
+            padding: 10px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(251, 255, 192);
+            color: rgb(7, 0, 19);
+            width: 45%;
+            height: 150px;
+            text-align: center;
+        }
+        /* .blc1{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(251, 255, 192);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        } */
+        .blc1{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(196, 192, 255);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc2{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(192, 255, 192);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc3{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(255, 192, 192);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc4{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(251, 255, 192);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc5{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(255, 188, 161);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc6{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(196, 192, 255);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc7{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(192, 255, 192);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc8{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(255, 192, 192);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc9{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(251, 255, 192);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc10{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(255, 188, 161);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc11{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(196, 192, 255);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc12{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(192, 255, 192);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc13{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(255, 192, 192);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc14{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(251, 255, 192);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc15{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(255, 188, 161);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc16{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(196, 192, 255);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc17{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(192, 255, 192);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc18{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color:  rgb(255, 192, 192);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc19{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(251, 255, 192);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc20{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(255, 188, 161);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc21{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(196, 192, 255);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc22{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(192, 255, 192);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc23{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(255, 192, 192);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc24{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(251, 255, 192);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc25{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(255, 188, 161);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc26{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color:  rgb(196, 192, 255);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc27{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(192, 255, 192);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc28{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color:  rgb(255, 192, 192);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc29{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(251, 255, 192);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc30{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(255, 188, 161);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc31{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color:  rgb(196, 192, 255);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc32{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(192, 255, 192);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc33{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(255, 192, 192);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc34{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(251, 255, 192);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc35{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(255, 188, 161);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        .blc36{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(196, 192, 255);
+            color: rgb(7, 0, 19);
+            width: 21%;
+            height: 120px;
+            text-align: center;
+        }
+        
+        .last1{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(178, 172, 255);
+            color: rgb(7, 0, 19);
+            width: 45%;
+            height: 120px;
+            text-align: center;
+        }
+        .last2{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(255, 254, 178);
+            color: rgb(7, 0, 19);
+            width: 45%;
+            height: 120px;
+            text-align: center;
+        }
+        .last3{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(155, 255, 160);
+            color: rgb(7, 0, 19);
+            width: 45%;
+            height: 120px;
+            text-align: center;
+        }
+        .last4{
+            display: inline-block;
+            margin: 20px;
+            border-radius: 3px;
+            border: 1px ;
+            background-color: rgb(255, 168, 229);
+            color: rgb(7, 0, 19);
+            width: 45%;
+            height: 120px;
+            text-align: center;
+        }
+        .txt{
+            padding: 40px 40px;
+        }
+
+        h1{
+            padding: 30px 40px;
+        }
+        p{
+            font-size: large;
+            padding-bottom: 10px;
+        }
+        button{
+            border: 0;
+            border-radius: 40px;
+            padding: 10px 50px;
+            margin: 20px ;
+            background-color: rgb(7, 0, 19);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="el1">
+        <h1>PHP</h1>
+        <p>A web server programming language</p>
+        <button>Learn PHP</button>
+    </div>
+    <div class="el2">
+        <h1>jQuery</h1>
+        <p>A JS library for developing web pages</p>
+        <button>Learn jQuery</button>
+    </div>
+    <div class="el3">
+        <h1>Java</h1>
+        <p>A programming language</p>
+        <button>Learn Java</button>
+    </div>
+    <div class="el4">
+        <h1>C++</h1>
+        <p>A programming language</p>
+        <button>Learn C++</button>
+    </div>
+    <div class="el5">
+        <h1>W3.CSS</h1>
+        <p>A CSS framework for faster and better responsive web pages</p>
+        <button>Learn W3.CSS</button>
+    </div>
+    <div class="el6">
+        <h1>Bootstrap</h1>
+        <p>A CSS framework for designing better web pages</p>
+        <button>Learn Bootstrap</button>
+    </div>
+    <div class="el7">
+        <h1>C</h1>
+    </div>
+    <div class="el8">
+        <h1>C++</h1>
+    </div>
+    <div class="blc1">
+        <h1 class="txt">R</h1>
+    </div>
+    <div class="blc2">
+        <h1 class="txt">Kotlin</h1>
+    </div>
+    <div class="blc3">
+        <h1 class="txt">Node.js</h1>
+    </div>
+    <div class="blc4">
+        <h1 class="txt">React</h1>
+    </div>
+    <div class="blc5">
+        <h1 class="txt">JSON</h1>
+    </div>
+    <div class="blc6">
+        <h1 class="txt">Vue</h1>
+    </div>
+    <div class="blc7">
+        <h1 class="txt">MySQL</h1>
+    </div>
+    <div class="blc8">
+        <h1 class="txt">XML</h1>
+    </div>
+    <div class="blc9">
+        <h1 class="txt">Sass</h1>
+    </div>
+    <div class="blc10">
+        <h1 class="txt">Icon</h1>
+    </div>
+    <div class="blc11">
+        <h1 class="txt">RWD</h1>
+    </div>
+    <div class="blc12">
+        <h1 class="txt">Graphics</h1>
+    </div>
+    <div class="blc13">
+        <h1 class="txt">SVG</h1>
+    </div>
+    <div class="blc14">
+        <h1 class="txt">Canvas</h1>
+    </div>
+    <div class="blc15">
+        <h1 class="txt">Rassberry Pi</h1>
+    </div>
+    <div class="blc16">
+        <h1 class="txt">Cyber Security</h1>
+    </div>
+    <div class="blc17">
+        <h1 class="txt">Colors</h1>
+    </div>
+    <div class="blc18">
+        <h1 class="txt">Git</h1>
+    </div>
+    <div class="blc19">
+        <h1 class="txt">MatPlotlib</h1>
+    </div>
+    <div class="blc20">
+        <h1 class="txt">NumPy</h1>
+    </div>
+    <div class="blc21">
+        <h1 class="txt">Pandas</h1>
+    </div>
+    <div class="blc22">
+        <h1 class="txt">SciPy</h1>
+    </div>
+    <div class="blc23">
+        <h1 class="txt">ASP</h1>
+    </div>
+    <div class="blc24">
+        <h1 class="txt">AngularJS</h1>
+    </div>
+    <div class="blc25">
+        <h1 class="txt">AppML</h1>
+    </div>
+    <div class="blc26">
+        <h1 class="txt">Go</h1>
+    </div>
+    <div class="blc27">
+        <h1 class="txt">TypeScript</h1>
+    </div>
+    <div class="blc28">
+        <h1 class="txt">Django</h1>
+    </div>
+    <div class="blc29">
+        <h1 class="txt">MongoDB</h1>
+    </div>
+    <div class="blc30">
+        <h1 class="txt">Statistics</h1>
+    </div>
+    <div class="blc31">
+        <h1 class="txt">Data Science</h1>
+    </div>
+    <div class="blc32">
+        <h1 class="txt">Typing Speed</h1>
+    </div>
+    <div class="blc33">
+        <h1 class="txt">HowTo</h1>
+    </div>
+    <div class="blc34">
+        <h1 class="txt">Code Game</h1>
+    </div>
+    <div class="blc35">
+        <h1 class="txt">Spaces</h1>
+    </div>
+    <div class="blc36">
+        <h1 class="txt">PostgreSQL</h1>
+    </div>
+    <div class="last1">
+        <h1>Excel</h1>
+    </div>
+    <div class="last2">
+        <h1>DSA-Data structure and Algorithm</h1>
+    </div>
+    <div class="last3">
+        <h1>Machine Learning</h1>
+    </div>
+    <div class="last4">
+        <h1>Artificial Intellligence</h1>
+    </div>
+</body>
+</html>
